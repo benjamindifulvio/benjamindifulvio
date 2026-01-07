@@ -54,7 +54,7 @@ function AboutSection() {
   ];
 
   const languages = ["English", "Spanish", "Brazilian-Portuguese"];
-  const code = ["HTML/CSS/JS", "Python", "AHK 1.1"];
+  const code = ["HTML/CSS/JS", "Python", "AHK 1.1", "TypeScript", "React", "TailwindCSS"];
 
   return (
     <section id="about" className="py-32 px-4 max-w-7xl mx-auto" ref={ref}>
