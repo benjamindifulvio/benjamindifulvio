@@ -4,6 +4,10 @@ import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
 export default defineConfig({
+  // The base property ensures assets load correctly when hosted at 
+  // github.io/benjamindifulvio/
+  base: '/benjamindifulvio/', 
+
   plugins: [
     react(),
     runtimeErrorOverlay(),
