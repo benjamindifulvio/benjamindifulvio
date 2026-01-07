@@ -25,6 +25,9 @@ export const api = {
   },
 };
 
+export type InsertMessage = z.infer<typeof insertMessageSchema>;
+export type MessageResponse = z.infer<typeof api.messages.create.responses[201]>;
+
 export function buildUrl(path: string, params?: Record<string, string | number>): string {
   let url = path;
   if (params) {

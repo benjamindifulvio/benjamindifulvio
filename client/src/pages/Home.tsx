@@ -69,7 +69,7 @@ function AboutSection() {
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
             I'm a passionate developer exploring the intersection of automation and creativity. 
             Currently diving deep into macro creation and weighing the nuances between Python and AHK automation workflows.
-            When I'm not coding, you can find me on the soccer field or creating digital art.
+            When I'm not coding, you can find me on the soccer field or creating art.
           </p>
           
           <div className="flex gap-4">
@@ -140,9 +140,9 @@ function ProjectsSection() {
       color: "from-blue-500 to-cyan-500"
     },
     {
-      title: "Digital Art Portfolio",
-      description: "A collection of geometric and abstract digital art pieces created using algorithmic generation tools.",
-      tags: ["Art", "Generative", "Design"],
+      title: "Affiliate Extension",
+      description: "An extension that I'm developing to give to my friends and family that generates a small amount of money from affiliate links, provided through Amazon Affiliates, CJ, and Impact.",
+      tags: ["Extensions", "JSON", "JavaScript"],
       icon: Code2,
       color: "from-purple-500 to-pink-500"
     }
@@ -233,52 +233,7 @@ function ContactSection() {
     <section id="contact" className="py-32 px-4 max-w-3xl mx-auto">
       <div className="bg-card/50 backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-12">
         <h2 className="text-3xl font-display font-bold mb-2">Get in Touch</h2>
-        <p className="text-muted-foreground mb-8">Have a project in mind or want to talk about automation?</p>
-        
-        <form onSubmit={handleSubmit} className="space-y-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="space-y-2">
-              <label className="text-sm font-medium text-gray-400">Name</label>
-              <Input 
-                required
-                value={form.name}
-                onChange={e => setForm({...form, name: e.target.value})}
-                placeholder="John Doe" 
-                className="bg-black/20 border-white/10 h-12 rounded-xl focus:border-primary/50"
-              />
-            </div>
-            <div className="space-y-2">
-              <label className="text-sm font-medium text-gray-400">Email</label>
-              <Input 
-                required
-                type="email"
-                value={form.email}
-                onChange={e => setForm({...form, email: e.target.value})}
-                placeholder="john@example.com" 
-                className="bg-black/20 border-white/10 h-12 rounded-xl focus:border-primary/50"
-              />
-            </div>
-          </div>
-          
-          <div className="space-y-2">
-            <label className="text-sm font-medium text-gray-400">Message</label>
-            <Textarea 
-              required
-              value={form.message}
-              onChange={e => setForm({...form, message: e.target.value})}
-              placeholder="Tell me about your project..." 
-              className="bg-black/20 border-white/10 min-h-[150px] rounded-xl focus:border-primary/50 resize-none"
-            />
-          </div>
-
-          <Button 
-            disabled={isPending}
-            type="submit" 
-            className="w-full h-12 text-lg font-semibold bg-primary hover:bg-primary/90 text-white rounded-xl shadow-lg shadow-primary/25"
-          >
-            {isPending ? "Sending..." : <><Send className="w-4 h-4 mr-2" /> Send Message</>}
-          </Button>
-        </form>
+        <p className="text-muted-foreground mb-8">Have a project in mind or want to talk about automation? email benjamintdifulvio@proton.me</p>
       </div>
     </section>
   );

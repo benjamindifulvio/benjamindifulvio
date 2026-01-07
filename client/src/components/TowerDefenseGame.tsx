@@ -251,7 +251,7 @@ export function TowerDefenseGame() {
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/70 backdrop-blur-sm">
           <h3 className="text-4xl font-display font-bold text-white mb-4">Tower Defense</h3>
           <p className="text-gray-300 mb-8 max-w-md text-center">
-            Protect the core! Aim with your mouse. Geometric enemies approach from all sides.
+            Geometric enemies approach from all sides.
           </p>
           <button 
             onClick={() => { initGame(); setIsPlaying(true); }}
